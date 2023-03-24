@@ -14,17 +14,15 @@ License: GPL-2.0+
 //testimonials
 add_action('get_footer','mybox_1');
 function mybox_1(){
-  // echo '<div class="flex-container">';
-  // echo '<div class="infobox animate__animated animate__backInDown">'.get_option('testimonial1').'<br>';
-  // echo '<div class="infoname">'.get_option('testimonial1n').'</div>';
-  // echo '</div>';
-  // echo '</div>';
+ 
+  
   echo '<div class="slide">';
-                echo '<h1 class="slide-number">';
-                echo get_option('testimonial1');
-                echo '<div class="infoname">'.get_option('testimonial1n').'</div>';
-                echo '</h1>';
-           echo '</div>';
+  echo '<div class="slide-number css-typing">';
+  echo '<p>'.get_option('testimonial1').'</p>';
+  echo '<div class="infoname ">'.'<p>'.get_option('testimonial1n').'</p>'.'</div>';
+  echo '<img id="previewImage" src="'.get_option('testimonial1_image').'">';
+  echo '</div>';
+  echo '</div>';
 }
 
 add_action('get_footer','mybox_2');
@@ -38,6 +36,7 @@ function mybox_2(){
               echo  '<h1 class="slide-number">';
               echo get_option('testimonial2');
               echo '<div class="infoname">'.get_option('testimonial2n').'</div>';
+              echo '<img id="previewImage" src="'.get_option('testimonial2_image').'">';
                 echo '</h1>';
            echo '</div>';
 
@@ -54,6 +53,7 @@ function mybox_3(){
   echo  '<h1 class="slide-number">';
   echo get_option('testimonial3');
   echo '<div class="infoname">'.get_option('testimonial3n').'</div>';
+  echo '<img id="previewImage" src="'.get_option('testimonial3_image').'">';
     echo '</h1>';
 echo '</div>';
 }
