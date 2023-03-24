@@ -10,3 +10,9 @@ Mar 22 2023 13:12:49
 Mar 22 2023 13:12:49
 {"Number":8192,"Message":"base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated","File":"\/Applications\/XAMPP\/xamppfiles\/htdocs\/port\/port\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/export\/class-ai1wm-export-config.php","Line":171}
 
+Mar 23 2023 11:44:38
+{"Number":8192,"Message":"base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated","File":"\/Applications\/XAMPP\/xamppfiles\/htdocs\/port\/port\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/export\/class-ai1wm-export-config.php","Line":171}
+
+Mar 23 2023 11:44:38
+{"Number":8192,"Message":"base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated","File":"\/Applications\/XAMPP\/xamppfiles\/htdocs\/port\/port\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/export\/class-ai1wm-export-config.php","Line":171}
+

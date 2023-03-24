@@ -39,6 +39,16 @@ if(isset($_POST['wphw_submit'])){
           <?php echo get_option('testimonial1');?></textarea></td>
           <td scope="row">Author</td>
           <td><input name="testimonial1n" type="text" value="<?php echo get_option('testimonial1n');?>"></td>
+          <td>
+  <input type="file" accept="image/*" id="fileInput" name="testimonial1i">
+  <img id="previewImage" src="#" alt="Preview Image">
+ 
+</td>
+
+</div>
+
+</div>
+
           </tr>
           <!-- monial2 -->
           <tr>
@@ -46,6 +56,8 @@ if(isset($_POST['wphw_submit'])){
           <?php echo get_option('testimonial2');?></textarea></td>
           <td scope="row">Author</td>
           <td><input name="testimonial2n" type="text" value="<?php echo get_option('testimonial2n');?>"></td>
+          <input type="file" accept="image/*" id="fileInput" name="testimonial2i">
+  <img id="previewImage" src="#" alt="Preview Image">
           </tr>
           <!-- monial3 -->
           <td><textarea maxLength="255" name="testimonial3" rows="10" cols="30" >
@@ -63,3 +75,19 @@ if(isset($_POST['wphw_submit'])){
    </div>
  </div>
 </div>
+<script> 
+  const fileInput = document.getElementById('fileInput');
+const previewImage = document.getElementById('previewImage');
+
+fileInput.addEventListener('change', function() {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.addEventListener('load', function() {
+      previewImage.setAttribute('src', reader.result);
+    });
+    reader.readAsDataURL(file);
+  }
+});
+
+</script>
